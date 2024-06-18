@@ -1,0 +1,139 @@
+body{
+    background-color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: whitesmoke;
+}
+a{
+    text-decoration: none;
+    width: 20PX;
+    text-align: center;
+    
+}
+a:hover{
+    color: orangered;
+}
+a:active{
+    text-decoration: underline;
+}
+a::selection{
+    text-decoration: underline;
+}
+#clr:hover{
+    color: black;
+}
+button:hover
+{
+    background-color: orangered;
+}
+#head{
+    display: flex;
+    flex-direction: column;
+
+}
+.seven{
+    display: flex;
+    background-color: rgb(52, 48, 48);
+    align-items: center;
+    justify-self: center;
+}
+.one,.two,.three,.four,.five{
+    flex: 1;
+    color: white;
+}
+.six{
+    flex: 4;
+    display: flex;
+    justify-content: center;
+}
+#btn1,button{
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 10px;
+    color:black;
+    
+}
+.ord
+{
+    padding: 0px;
+    /* width: 0px; */
+    margin: opx;
+}
+.total{
+    display: flex;
+}
+#body{
+    flex:3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    padding-left: 50px;
+}
+#im{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+    border-radius: 30%;
+}
+img
+{
+    border-radius: 60%;
+}
+span{
+    color: rgba(242, 72, 10, 0.871);
+}
+#btns > button{
+    margin: 10px;
+}
+#btn2{
+    background-color: black;
+    color: white;
+}
+#btn2:hover{
+    background-color: white;
+    color: black;
+}
+#btn3{
+    background-color: orangered;
+    color:black;
+}
+#btn3:hover{
+    background-color: white;
+}
+.seven > h4{
+    color: orange;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+input,textarea{
+    width: 700px;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+h1{
+    padding-left: 650px;
+}
+h1 > span{
+    color: orangered;
+}
+#cer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cer > img{
+    border-radius: 10px;
+    width: 40vw;
+    height: 60vh;
+    border: 2px solid black;
+    margin-left: 25px;
+    margin-top: 65px;
+}
