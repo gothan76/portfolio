@@ -1,0 +1,1 @@
+This is the datasets of fer2013.csv file for detecting emotion of realtime face recognision
