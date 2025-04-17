@@ -1,0 +1,112 @@
+
+.skil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skil > li > h3 {
+  margin: 5px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.skil > li {
+  list-style-type: none;
+  margin: 25px;
+  padding: 20px;
+  display: block;
+}
+.bar {
+  background-color: #353b48;
+  display: flex;
+  width: 350px;
+  height: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.bar > span {
+  height: 100%;
+  display: block;
+  background: linear-gradient(
+    135deg,
+    rgba(236, 0, 140, 1) 0%,
+    rgba(252, 103, 103, 1) 100%
+  );
+  border-radius: 10px;
+}
+.html {
+  width: 100%;
+  animation: html 3s ease-in-out forwards;
+}
+
+.css {
+  width: 95%;
+  animation: css 3s ease-in-out forwards;
+}
+
+.js {
+  width: 80%;
+  animation: js 3s ease-in-out forwards;
+}
+
+.react {
+  width: 65%;
+  animation: react 3s ease-in-out forwards;
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+
+@keyframes js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@media screen and (min-width:800px){
+  .bar {
+  background-color: #353b48;
+  display: flex;
+  width: 600px;
+  height: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.skil > li > h3 {
+  margin: 5px;
+  padding: 10px;
+  font-size: 30px;
+}
+}

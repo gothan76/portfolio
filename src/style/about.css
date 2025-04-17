@@ -1,0 +1,244 @@
+/* style/about.css */
+
+/* Base Styles */
+.main_about {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* About Box */
+.about_box {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about_box h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.about_box p {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+.about_box a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.about_box a:hover {
+  color: #2980b9;
+}
+
+/* My Details Section */
+.my_detial {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.resume button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s;
+}
+
+.resume button:hover {
+  background-color: #2980b9;
+}
+
+.resume button a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.resume img {
+  width: 18px;
+  height: 18px;
+  filter: invert(1);
+}
+
+.name h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.name .para {
+  font-size: 1.2rem;
+  color: #3498db;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.name p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Education/Experience Section */
+.education1,
+.education {
+  margin-bottom: 50px;
+}
+
+.but {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.but button {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.but button:hover {
+  background-color: #e9ecef;
+}
+
+.but button:focus {
+  outline: none;
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+.show {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.donotshow {
+  display: none;
+}
+
+.educa-det {
+  background-color: #f8f9fa;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.educa-det h1 {
+  font-size: 1.5rem;
+  margin: 15px 0 10px;
+  color: #2c3e50;
+}
+
+.educa-det p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.year {
+  font-weight: bold;
+  color: #3498db !important;
+  margin-bottom: 5px !important;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main_about {
+    padding: 15px;
+  }
+  .year {
+    display: none;
+  }
+  .about_box h1 {
+    font-size: 2rem;
+  }
+
+  .name h1 {
+    font-size: 1.8rem;
+  }
+
+  .name .para {
+    font-size: 1.1rem;
+  }
+
+  .educa-det {
+    padding: 15px;
+  }
+
+  .educa-det h1 {
+    font-size: 1.3rem;
+  }
+
+  .but {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .but button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .my_detial {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .resume {
+    flex: 0 0 200px;
+  }
+
+  .name {
+    flex: 1;
+  }
+
+  .education {
+    display: none; /* Hide the duplicate education section on desktop */
+  }
+}
+
+/* Fix for the duplicate education section on mobile */
+@media (max-width: 768px) {
+  .education1 {
+    display: none;
+  }
+
+  .education {
+    display: block;
+  }
+}

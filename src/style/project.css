@@ -1,0 +1,82 @@
+.project_det{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pro_det {
+  border: 2px solid rgb(58, 57, 57) ;
+  width: 85%;
+  height: 70%;
+  margin: 40px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.pro_det > img {
+  width: 95%;
+  height: 150px;
+  padding: 20px 10px 20px 10px;
+}
+.first {
+
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.first > span {
+ 
+  width: 250px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.first > span > img {
+  width: 35px;
+  padding: 10px;
+}
+.first > button {
+  font-size: 18px;
+  width: 210px;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+.first > button > img {
+  width: 25px;
+  padding-right: 10px;
+} 
+.box {
+  display: flex;
+}
+.second {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  margin: 10px;
+}
+.second > button > img {
+  width: 25px;
+}
+.second > button {
+  width: 70px;
+  border-radius: 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+@media screen and (min-width:800px){
+.project_det {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+}
