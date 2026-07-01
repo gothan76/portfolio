@@ -13,7 +13,7 @@
   font-size: 18px;
   font-weight: 300;
 }
-.icon > img {
+.icon > a > img {
   width: 30px;
   border: 1px solid black;
   background-color: black;
