@@ -30,15 +30,35 @@ const Home = () => {
           <img src={photo} alt="" />
 
           <div className="icon">
-            <img src={coding} alt="" />
+            {/* <a
+              className="navimage"
+              href="https://github.com/gothan76/Portfolio/tree/main/src/com"
+            >
+              <img src={coding} alt="" />{" "}
+            </a> */}
 
-            <img src={github} alt="" />
-
-            <img src={email} alt="" />
-
-            <img src={linkedin} alt="" />
-
-            <img src={instagram} alt="" />
+            <a
+              href="https://github.com/gothan76"
+              target="_blank"
+            >
+              {" "}
+              <img src={github} alt="" />
+            </a>
+            <a
+              href="mailto:gothandaraman314@gmail.com"
+              target="_blank"
+            >
+              <img src={email} alt="" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/gothanda-raman-261513274/"
+              target="_blank"
+            >
+              <img src={linkedin} alt="" />
+            </a>
+            <a href="">
+              <img src={instagram} alt="" />
+            </a>
           </div>
         </div>
       </div>
